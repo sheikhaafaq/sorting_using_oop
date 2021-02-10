@@ -17,7 +17,7 @@ class sorting:
                     isswap = True
             if not(isswap):
                 return "alreadly sorted.."
-        print(self.arr)
+        
         return self.arr
     
 
@@ -31,12 +31,12 @@ class sorting:
 
             #shift value right side
             while position > 0 and self.arr[position-1] > currentValue:
-                self.arr[position] = self.arr[position-1]S
+                self.arr[position] = self.arr[position-1]
                 position = position-1
 
             #Inserting : insertin sort
             self.arr[position] = currentValue
-        print(self.arr)
+        
         return self.arr
     
     
@@ -50,5 +50,5 @@ class sorting:
                 if self.arr[ min_value ] > self.arr[k]:
                     min_value = k
             self.arr[j], self.arr[ min_value ] = self.arr[min_value], self.arr[j]
-        print(self.arr)
+        
         return self.arr
